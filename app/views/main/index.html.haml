@@ -1,0 +1,12 @@
+#timeline.timeline-view
+  %h2 My Tweets
+%script#timeline-template{type: "text/x-handlebars-template"}
+  %ul.listview
+    {{#each tweet}}
+    %li
+      .icon
+        %img{src: "{{user.profile_image_url}}"}/
+      .data
+        %h4 {{user.name}}
+        %p {{text}}
+    {{/each}}

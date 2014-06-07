@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    %title FirsBnApp
+    = stylesheet_link_tag    "application", :media => "all"
+    = csrf_meta_tags
+  %body.metrouicss
+    = yield
+    = javascript_include_tag "application"
