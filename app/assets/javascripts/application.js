@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require external/underscore.js
 //= require external/backbone.js
 //= require external/handlebars-v1.3.0.js
+//= require external/moment-with-langs.js
 //= require_tree ./model
 //= require_tree ./collection
 //= require_tree ./view

@@ -3,6 +3,8 @@ FirsBnApp::Application.routes.draw do
 
   get '/timeline' => 'main#timeline'
 
+  get '/profile' => 'main#profile'
+
   root to: "main#index"
 
 
