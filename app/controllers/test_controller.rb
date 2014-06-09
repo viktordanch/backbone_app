@@ -1,5 +1,4 @@
-class MainController < ApplicationController
-
+class TestController < ApplicationController
   def index
   end
 
@@ -40,5 +39,4 @@ class MainController < ApplicationController
       config.access_token_secret = SECRET_TOKEN
     end
   end
-
 end

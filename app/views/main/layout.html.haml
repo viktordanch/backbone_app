@@ -1,15 +1,21 @@
-#app.grid
-  .row
-    .span8
-      #timeline.timeline-view
-        %h2 My Tweets
-    .span4
-      #profile.profile-view
-      #search.search-view
-        %form
-          .input-control.text
-            %input#searchbox{autofocus: "", placeholder: "I'm\r\nlooking for..", type: "text"}/
-          %button#searchbutton.bg-color-blue Search
+.main_container
+  #container
+
+%script#layout{type: "template"}
+  %p A simple layout
+  #subview
+  #subview2
+  #subview3
+/ View template
+%script#view{type: "template"}
+  This is the sub1 view content...
+
+%script#view2{type: "template"}
+  This is the sub2 view content...
+
+%script#view3{type: "template"}
+  This is the sub 3view content...
+
 
 %script#timeline-template{type: "text/x-handlebars-template"}
   %ul.listview

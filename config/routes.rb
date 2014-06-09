@@ -1,9 +1,19 @@
 FirsBnApp::Application.routes.draw do
   get "main/index"
+  get "test/index"
 
-  get '/timeline' => 'main#timeline'
+  get '/layout' => 'main#layout'
 
-  get '/profile' => 'main#profile'
+  get '/profile/:id' => 'main#profile_by_id'
+
+  get 'search/:param' => 'main#find_by_param'
+
+  get '/test/profile/:id' => 'test#profile_by_id'
+
+  get '/test/search/:param' => 'test#find_by_param'
+
+  get '/test/timeline' => 'test#timeline'
+  get '/timeline' => 'test#timeline'
 
   root to: "main#index"
 
